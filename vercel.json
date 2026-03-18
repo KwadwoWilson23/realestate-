@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/PrestigeGhana_Demo_Website.html"
+      "dest": "/Terra Nova Realty.html"
     },
     {
       "src": "/(.*)",
