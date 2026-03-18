@@ -24,7 +24,10 @@ body{background:var(--dark);color:var(--off-white);font-family:'DM Sans',sans-se
 /* ─── NAV ─── */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 52px;height:72px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,border .4s}
 nav.scrolled{background:rgba(8,8,8,0.95);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
-.nav-logo-img{height:50px;object-fit:contain;cursor:pointer}
+.nav-logo-img{height:50px;object-fit:contain;cursor:pointer;transition:transform .3s}
+.nav-logo-img:hover{transform:scale(1.05)}
+.footer-logo-img{height:40px;object-fit:contain;margin-bottom:16px;transition:opacity .3s}
+.footer-logo-img:hover{opacity:.8}
 .nav-links{display:flex;gap:36px;list-style:none}
 .nav-links a{font-size:11.5px;letter-spacing:1.8px;text-transform:uppercase;color:rgba(246,241,233,.65);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--gold)}
@@ -212,7 +215,7 @@ footer{background:var(--dark-2);border-top:1px solid var(--border);padding:56px 
 
 <!-- NAV -->
 <nav id="main-nav">
-  <img src="images/logo.png" alt="TerraNova Realty" class="nav-logo-img" style="height:50px;">
+  <img src="images/logo.png" alt="TerraNova Realty" class="nav-logo-img">
   <ul class="nav-links">
     <li><a href="#listings">Buy</a></li>
     <li><a href="#listings">Rent</a></li>
@@ -417,7 +420,7 @@ footer{background:var(--dark-2);border-top:1px solid var(--border);padding:56px 
   </div>
   <div class="testi-grid">
     <div class="tcard">
-      <div class="tcard-text">PrestigeGhana made finding our dream home in East Legon effortless. The team's knowledge of the Accra market is unmatched.</div>
+      <div class="tcard-text">TerraNova Realty made finding our dream home in East Legon effortless. The team's knowledge of the Accra market is unmatched.</div>
       <div class="tcard-author"><strong>Kofi &amp; Abena Darko</strong>East Legon — Purchased 2024</div>
     </div>
     <div class="tcard">
@@ -435,7 +438,7 @@ footer{background:var(--dark-2);border-top:1px solid var(--border);padding:56px 
 <footer>
   <div class="footer-grid">
     <div>
-      <img src="images/logo.png" alt="TerraNova Realty" style="height:40px;margin-bottom:16px;">
+      <img src="images/logo.png" alt="TerraNova Realty" class="footer-logo-img">
       <p class="fb-desc">Accra's premier luxury real estate platform. Connecting buyers, sellers, and renters with Ghana's finest properties since 2018.</p>
       <div class="fb-socials">
         <div class="soc">in</div>
@@ -454,7 +457,7 @@ footer{background:var(--dark-2);border-top:1px solid var(--border);padding:56px 
     </div>
     <div class="fcol">
       <h4>Contact</h4>
-      <ul><li>+233 24 000 0000</li><li>info@prestigeghana.com</li><li>East Legon, Accra</li><li>Mon–Sat 8am–6pm</li></ul>
+      <ul><li>+233 24 000 0000</li><li>info@terranovarealty.com</li><li>East Legon, Accra</li><li>Mon–Sat 8am–6pm</li></ul>
     </div>
   </div>
   <div class="footer-bottom">
